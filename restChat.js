@@ -28,7 +28,7 @@ document.getElementById('send-btn').addEventListener("click", sendText);
 // Action if they push enter on message box
 document.getElementById('message').addEventListener("keydown", (e)=> {
     if (e.code == "Enter") {
-		e.preventDefault();
+	e.preventDefault();
     	sendText();
     	document.getElementById('message').value = "";
     	return false;
